@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    MAIN
+{% endblock %}
+
+{% block main %}
+   <header class="container masthead-second text-white ">
+
+      <div class="row row-centered">
+          <div class="col-md-5 align-self-center col-centered">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Look to the right and CopyME</h5>
+                    <iframe src="{{ url_for('video_feed') }}" width="400" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 align-self-center col-centered">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Copy my emotion</h5>
+                    <iframe src="static/anfry-face.jpg" width="400" height="330" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </header>
+{% endblock %}

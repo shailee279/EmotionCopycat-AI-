@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    MAIN
+{% endblock %}
+
+{% block main %}
+   <header class="container masthead-second text-white ">
+
+      <div class="row row-centered">
+          <div class="col-md-5 align-self-center col-centered">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Choose the answer</h5>
+                    <iframe id="photo" src="static/anfry-face.jpg" width="400" height="330" frameborder="0" style="border:0" scrolling="no"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 align-self-center col-centered">
+            <div id="answers-cc-1" class="card">
+              <div class="card-body">
+                <h5 class="card-title">Which one you think?</h5>
+                    <a class="btn answer btn-primary btn-join" href="#" onclick="check(this.innerHTML);" value="happy" name="emotion" type="text"><span class="emoji">&#128513;</span>  Happy</a>
+                    <a class="btn answer btn-primary btn-join" href="#" onclick="check(this.innerHTML);" value="angry" type="text"><span class="emoji">&#128544;</span>  Angry</a>
+                    <a class="btn answer btn-primary btn-join" href="#" onclick="check(this.innerHTML);" value="sad" type="text"><span class="emoji">&#128543;</span>  Sad</a>
+                    <a class="btn answer btn-primary btn-join" href="#" onclick="check(this.value);" value="surprised" type="text"><span class="emoji">&#128562;</span>  Surprised</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    </header>
+   
+{% endblock %}
